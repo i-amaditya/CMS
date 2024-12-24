@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contractor Management System</h1>
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Home Page (Building List) -->
+        <section id="building-list-section" class="top-centered">
+            <h2>Buildings</h2>
+            <div class="building-list">
+                <button class="building" onclick="openBuilding('ABC Building 1', 'https://docs.google.com/spreadsheets/d/1VA3yLZfdUx0TbOgE9OLh31NCkOhfqzfe/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://docs.google.com/spreadsheets/d/1AIBw2rC1v0TRz9uoqQpOZRDVIPOByqOW/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://docs.google.com/spreadsheets/d/1VDprlniEqn-kz6Vaaz_bbHD4QKE1selJ/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://link1_profit.com')">ABC Building 1</button>
+                <button class="building" onclick="openBuilding('ABC Building 2', 'https://docs.google.com/spreadsheets/d/1tlDxSKGbF3qR0E7uwZ7DrF5Ms6w-S_Kx/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://docs.google.com/spreadsheets/d/1q5ayi7cYT4nkJcRUnsdw2nOb57R5Dm75/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://link2_invoice.com', 'https://link2_profit.com')">ABC Building 2</button>
+                <button class="building" onclick="openBuilding('ABC Building 3', 'https://docs.google.com/spreadsheets/d/1HZv-qae9SyugQSC7lMvMP6WSbgB3bfYs/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://docs.google.com/spreadsheets/d/12WS6jVtxVbAHk5inTNp33iioFZTlb6aV/edit?usp=drive_link&ouid=111042556596828035517&rtpof=true&sd=true', 'https://link3_invoice.com', 'https://link3_profit.com')">ABC Building 3</button>
+                <button class="building" onclick="openBuilding('ABC Building 4', 'https://docs.google.com/spreadsheets/d/1BviFO0tzcXZGdENN9EW2ozCddQvZZvRB/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://docs.google.com/spreadsheets/d/1DCdvlAuMB5k38smNZ6WvJs6hz7zWcuQR/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://link4_invoice.com', 'https://link4_profit.com')">ABC Building 4</button>
+                <button class="building" onclick="openBuilding('ABC Building 5', 'https://docs.google.com/spreadsheets/d/1s2oGyqNrX7kGOmTzr30kUx319wFVpFaP/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://docs.google.com/spreadsheets/d/1buOwGCAarAQstpF_U1Po8gN4PJoiBM9i/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://link5_invoice.com', 'https://link5_profit.com')">ABC Building 5</button>
+                <button class="building" onclick="openBuilding('ABC Building 6', 'https://docs.google.com/spreadsheets/d/1mjksMKj1Gjwd5Gt_j55S9cTSn9NoqQrt/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://docs.google.com/spreadsheets/d/1wNBOBSXwxaWduQhEUQlMlMVeqhBitI1N/edit?usp=sharing&ouid=111042556596828035517&rtpof=true&sd=true', 'https://link6_invoice.com', 'https://link6_profit.com')">ABC Building 6</button>
+            </div>
+        </section>
+
+        <!-- Building Details Page -->
+        <section id="building-details-section" class="top-centered" style="display: none;">
+            <h2 id="building-name">Building Details</h2>
+            <div class="options-list">
+                <button class="option"><a id="link-attendance" href="#" target="_blank">Worker Attendance</a></button>
+                <button class="option"><a id="link-costing" href="#" target="_blank">Material Costing</a></button>
+                <button class="option"><a id="link-invoice" href="#" target="_blank">Generate Invoice</a></button>
+                <button class="option"><a id="link-profit" href="#" target="_blank">Net Income</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Contractor Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
